@@ -1,0 +1,316 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HANDCURSOR          CURSOR                  "handcurs.cur"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "MainIcon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 457, 235
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EXPRESSION,127,189,279,39,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    DEFPUSHBUTTON   "Calculate",IDC_CALCULATE,409,205,41,23
+    PUSHBUTTON      "<",IDC_HISTORY_PREV,409,189,19,14,WS_DISABLED
+    PUSHBUTTON      ">",IDC_HISTORY_NEXT,431,189,19,14,WS_DISABLED
+    CONTROL         "",IDC_RESULTLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,127,17,323,168
+    LTEXT           "Variables:",IDC_STATIC,7,7,32,8
+    LTEXT           "History:",IDC_STATIC,127,7,24,8
+    CONTROL         "",IDC_VARIABLES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,17,115,211
+END
+
+IDD_NETLOGO DIALOGEX 0, 0, 273, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_NETLOGO"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            "",IDC_ABOUTICON,9,7,20,20
+    LTEXT           "IDC_APPNAME",IDC_APPNAME,84,7,159,8
+    LTEXT           "IDC_APPVERSION",IDC_APPVERSION,84,17,159,8
+    LTEXT           "IDC_APPCOPYRIGHT",IDC_APPCOPYRIGHT,44,53,192,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,40,63,234,1
+    DEFPUSHBUTTON   "OK",IDC_OKBUTTON,220,69,50,14
+    LTEXT           "IDC_BUILDTIMEDATE",IDC_BUILDTIMEDATE,84,27,159,8
+    LTEXT           "www.NetworkDLS.com",IDC_NETLINK,84,37,159,8
+    LTEXT           "Web site:",IDC_STATIC,44,37,31,8
+    LTEXT           "Application:",IDC_STATIC,44,7,38,8
+    LTEXT           "Version:",IDC_STATIC,44,17,26,8
+    LTEXT           "Build:",IDC_STATIC,44,27,18,8
+END
+
+IDD_VARIABLE DIALOGEX 0, 0, 293, 111
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_VARNAME,7,17,141,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VAREXPR,7,47,279,39,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "Ok",IDC_OK,182,90,50,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,236,90,50,14
+    LTEXT           "Variable Name:",IDC_STATIC,7,7,49,8
+    LTEXT           "Variable Expression:",IDC_STATIC,7,36,64,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 450
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_NETLOGO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_VARIABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,9
+ PRODUCTVERSION 1,0,0,9
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Expression Parsing Calculator"
+            VALUE "CompanyName", "NetworkDLS"
+            VALUE "FileDescription", "Expression Parsing Calculator"
+            VALUE "FileVersion", "1.0.0.9"
+            VALUE "InternalName", "Expression Calculator"
+            VALUE "LegalCopyright", "Copyright © 2014 NetworkDLS. All rights reserved."
+            VALUE "OriginalFilename", "ECalc.exe"
+            VALUE "ProductName", "Expression Calculator"
+            VALUE "ProductVersion", "1.0.0.9"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Save Variables",              ID_FILE_SAVEVARIABLES
+        MENUITEM "Load Variables",              ID_FILE_LOADVARIABLES
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Smart Rounding",              ID_OPTIONS_SMARTROUNDING, CHECKED
+        MENUITEM "Integer Math",                ID_OPTIONS_INTEGERMATH
+        MENUITEM "Show Work",                   ID_OPTIONS_SHOWWORK
+    END
+    POPUP "Operators"
+    BEGIN
+        MENUITEM "Multiplication *",            ID_OPERATORS_MULTIPLICATION
+        MENUITEM "Division /",                  ID_OPERATORS_DIVISION
+        MENUITEM "Addition +",                  ID_OPERATORS_ADDITION
+        MENUITEM "Subtraction -",               ID_OPERATORS_SUBTRACTION
+        MENUITEM "Modulation %",                ID_OPERATORS_MODULATION
+        MENUITEM "Open Parenthesis (",          ID_OPERATORS_OPENPARENTHESIS
+        MENUITEM "Close Parenthesis )",         ID_OPERATORS_CLOSEPARENTHESIS
+        POPUP "Bitwise"
+        BEGIN
+            MENUITEM "AND &&",                      ID_OPERATORS_BITWISEAND
+            MENUITEM "AND Equal &&=",               ID_OPERATORS_BITWISEANDEQUAL
+            MENUITEM "OR |",                        ID_OPERATORS_BITWISEOR
+            MENUITEM "OR Equal |=",                 ID_OPERATORS_BITWISEOREQUAL
+            MENUITEM "XOR ^",                       ID_OPERATORS_EXCLUSIVEOR
+            MENUITEM "XOR Equal ^=",                ID_OPERATORS_BITWISEXOREQUAL
+        END
+        POPUP "Logic"
+        BEGIN
+            MENUITEM "AND &&&&",                    ID_OPERATORS_AND
+            MENUITEM "Equals =",                    ID_OPERATORS_EQUALS
+            MENUITEM "Greater OR Equal >=",         ID_OPERATORS_GREATEROREQUAL
+            MENUITEM "Greater Than >",              ID_OPERATORS_GREATERTHAN
+            MENUITEM "Less OR Equal <=",            ID_OPERATORS_LESSOREQUAL
+            MENUITEM "Less Than <",                 ID_OPERATORS_LESSTHAN
+            MENUITEM "Logical OR ||",               ID_OPERATORS_OR
+            MENUITEM "NOT !",                       ID_OPERATORS_NOT
+            MENUITEM "NOT Equal !=",                ID_OPERATORS_NOTEQUAL
+        END
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Documentation",               ID_HELP_DOCUMENTATION, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+IDR_VARPOPUP MENU
+BEGIN
+    POPUP "VARIABLE_POPUP"
+    BEGIN
+        MENUITEM "Add",                         ID_VARIABLE_ADD
+        MENUITEM "Edit",                        ID_VARIABLE_EDIT
+        MENUITEM "Delete",                      ID_VARIABLE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Delete All",                  ID_VARIABLE_DELETEALL
+    END
+END
+
+IDR_RESULTPOPUP MENU
+BEGIN
+    POPUP "RESULT_POPUP"
+    BEGIN
+        MENUITEM "Add Variable",                ID_RESULT_ADDVARIABLE
+        MENUITEM "Copy to Expression",          ID_RESULT_COPYTOEXPRESSION
+        MENUITEM "Copy to Clipboard",           ID_RESULT_COPYTOCLIPBOARD
+        MENUITEM "Delete",                      ID_RESULT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Delete All",                  ID_RESULT_DELETEALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_TITLECAPTION        "Expression Calculator"
+    IDS_FILEVERSION         "1.0.0.9"
+    IDS_APPCOPYRIGHT        "Copyright © 2014 NetworkDLS. All rights reserved."
+    IDS_REGISTRYKEY         "Software\\NetworkDLS\\Expression Calculator"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
