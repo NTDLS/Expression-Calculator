@@ -22,20 +22,8 @@
     <Filter Include="Classes &amp; Libraries\NSWFL">
       <UniqueIdentifier>{724960a6-e6f0-4847-8837-26c90d7adbcd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes &amp; Libraries\CStack">
-      <UniqueIdentifier>{7d769e86-83eb-4544-b659-7880fd34cca8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes &amp; Libraries\CMemPool">
-      <UniqueIdentifier>{c72d5693-ed84-4af3-81c5-79b9758d3440}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes &amp; Libraries\Debug">
-      <UniqueIdentifier>{bebbd12b-fe30-4697-a4cc-0b72ac15f5a6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes &amp; Libraries\CMathParser">
       <UniqueIdentifier>{48f9f839-3f05-4999-ac28-fb3037b5abf2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes &amp; Libraries\CStringBuilder">
-      <UniqueIdentifier>{5fe90988-3c9a-42e1-a7c4-2fddc45f3ab2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Setup">
       <UniqueIdentifier>{ee190528-842c-4665-bbba-5f7b958872ba}</UniqueIdentifier>
@@ -61,62 +49,98 @@
     <ClCompile Include="Dialogs\VarDlg.cpp">
       <Filter>Dialogs</Filter>
     </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_Conversion.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_Windows.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_DateTime.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_File.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_KeyGeneration.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_ListBox.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_ListView.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_Math.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_Memory.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_Menu.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_Registry.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_String.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_System.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\NSWFL\NSWFL_Types.Cpp">
-      <Filter>Classes &amp; Libraries\NSWFL</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\Debug\Debug.Cpp">
-      <Filter>Classes &amp; Libraries\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\CMemPool\CMemPool.Cpp">
-      <Filter>Classes &amp; Libraries\CMemPool</Filter>
-    </ClCompile>
-    <ClCompile Include="..\%40Libraries\CMathParser\CMathParser.cpp">
+    <ClCompile Include="CMathParser\CMathParser.cpp">
       <Filter>Classes &amp; Libraries\CMathParser</Filter>
     </ClCompile>
-    <ClCompile Include="..\%40Libraries\CStack\CStack.cpp">
-      <Filter>Classes &amp; Libraries\CStack</Filter>
+    <ClCompile Include="NSWFL\NSWFL_Base64.cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
     </ClCompile>
-    <ClCompile Include="..\%40Libraries\CStringBuilder\CStringBuilder.Cpp">
-      <Filter>Classes &amp; Libraries\CStringBuilder</Filter>
+    <ClCompile Include="NSWFL\NSWFL_CommandLineParser.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Conversion.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_CRC32.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_DateTime.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Debug.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_File.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Graphics.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_HighPrecisionTimer.cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_InsecureInterface.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_IsolationLock.cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_KeyGeneration.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_ListBox.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_ListView.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Math.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Memory.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_MemoryPool.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Menu.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Queue.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Registry.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_SHA1.cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Stack.cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_String.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_StringBuilder.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_System.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Types.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_URLEncoding.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_Windows.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_XMLReader.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClCompile>
+    <ClCompile Include="NSWFL\NSWFL_XMLWriter.Cpp">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +225,123 @@
     <ClInclude Include="..\%40Libraries\CStringBuilder\CStringBuilder.H">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="CMathParser\CMathParser.h">
+      <Filter>Classes &amp; Libraries\CMathParser</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL.h">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Base64.h">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_CommandLineParser.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Conversion.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_CRC32.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_DateTime.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Debug.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_DictonaryString.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_DictonaryT.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_File.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Graphics.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_HighPrecisionTimer.h">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_InsecureInterface.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_IsolationLock.h">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_KeyGeneration.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_ListBox.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_ListView.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Math.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Memory.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_MemoryPool.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Menu.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Queue.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Registry.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_SHA1.h">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Stack.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_String.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_StringBuilder.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_StringBuilderArray.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_System.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Types.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_URLEncoding.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_VectorBinary.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_VectorString.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_VectorT.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_Windows.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_XML.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_XMLReader.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
+    <ClInclude Include="NSWFL\NSWFL_XMLWriter.H">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\handcurs.cur">
@@ -218,10 +359,30 @@
     <None Include="Setup\Setup x86.iss">
       <Filter>Setup</Filter>
     </None>
+    <None Include="CMathParser\LICENSE">
+      <Filter>Classes &amp; Libraries\CMathParser</Filter>
+    </None>
+    <None Include="CMathParser\README.md">
+      <Filter>Classes &amp; Libraries\CMathParser</Filter>
+    </None>
+    <None Include="NSWFL\.gitignore">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </None>
+    <None Include="NSWFL\LICENSE">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </None>
+    <None Include="NSWFL\README.md">
+      <Filter>Classes &amp; Libraries\NSWFL</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resources\Resource.rc">
       <Filter>Resources</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMathParser\Information.txt">
+      <Filter>Classes &amp; Libraries\CMathParser</Filter>
+    </Text>
   </ItemGroup>
 </Project>

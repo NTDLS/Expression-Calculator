@@ -14,9 +14,7 @@
 #include "../Dialogs/VarDlg.H"
 #include "../Dialogs/NetLogoDlg.H"
 
-#include "../../@Libraries/CMathParser/CMathParser.H"
-#include "../../@Libraries/CStringBuilder/CStringBuilder.H"
-#include "../../@Libraries/CStack/CStack.H"
+#include "../../CMathParser/CMathParser.H"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -24,6 +22,7 @@ using namespace NSWFL::Windows;
 using namespace NSWFL::Registry;
 using namespace NSWFL::File;
 using namespace NSWFL::String;
+using namespace NSWFL::Collections;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -37,7 +36,7 @@ HWND hVariables = NULL;
 HWND hResultList = NULL;
 char sLastVariableFile[MAX_PATH];
 
-CStack QS(BEHAVIOR_FILO);
+Stack QS(BEHAVIOR_FILO);
 
 bool bShowWork = false;
 bool bSmartRounding = true;
@@ -49,7 +48,7 @@ void LoadVariables(char *sFileName)
 {
 	ListView_DeleteAllItems(hVariables);
 
-	CStringBuilder variables;
+	StringBuilder variables;
 
 	if(variables.AppendFromFile(sFileName))
 	{
@@ -84,7 +83,7 @@ void LoadVariables(char *sFileName)
 
 void SaveVariables(char *sFileName)
 {
-	CStringBuilder variables;
+	StringBuilder variables;
 
 	char sVarName[MAX_RESULT];
 	char sVarValue[MAX_RESULT];
@@ -546,7 +545,7 @@ void InsertResult(const char *sText)
 
 void MathDebugTextCallback(const char *sText)
 {
-	CStringBuilder text(sText);
+	StringBuilder text(sText);
 
 	text.Replace("\t", "    ");
 	text.Replace("\n", "");
@@ -667,7 +666,7 @@ INT_PTR CALLBACK MainDialog(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
         else if(wParam == IDC_CALCULATE)
         {
 			CMathParser MP;
-			CStringBuilder sExp;
+			StringBuilder sExp;
 
 			sExp.AppendFromTextBox(hExpression);
 			if(sExp.Length > 0)

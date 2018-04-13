@@ -13,12 +13,12 @@
 #include "../Dialogs/VarDlg.H"
 #include "../Dialogs/NetLogoDlg.H"
 
-#include "../../@Libraries/CMathParser/CMathParser.H"
-#include "../../@Libraries/CStringBuilder/CStringBuilder.H"
+#include "../../CMathParser/CMathParser.H"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 using namespace NSWFL::Windows;
+using namespace NSWFL::String;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -66,12 +66,12 @@ INT_PTR CALLBACK VarDialog(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
     {
         if(wParam == IDC_OK)
         {
-			CStringBuilder sName;
+			StringBuilder sName;
 			sName.Initialize();
 			sName.AppendFromTextBox(hVarName);
 			if(sName.Length > 0)
 			{
-				CStringBuilder sExpr;
+				StringBuilder sExpr;
 				sExpr.Initialize();
 				sExpr.AppendFromTextBox(hVarExpr);
 				if(sExpr.Length)

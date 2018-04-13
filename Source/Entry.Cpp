@@ -13,11 +13,12 @@
 #include "Entry.H"
 #include "Init.H"
 
-#include "../../@Libraries/NSWFL/NSWFL.h"
+#include "../../NSWFL/NSWFL.h"
 
 #include "../Dialogs/MainDlg.H"
 
 using namespace NSWFL::Math;
+using namespace NSWFL::Memory;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -28,7 +29,7 @@ char gsFileVersion[10];
 char gsTitleCaption[64];
 char gsRegistryKey[255];
 
-CMemPool gMem; //The global memory object.
+MemoryPool gMem; //The global memory object.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

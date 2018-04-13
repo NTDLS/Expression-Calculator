@@ -1,0 +1,6 @@
+[submodule "NSWFL"]
+	path = NSWFL
+	url = https://github.com/NTDLS/NSWFL
+[submodule "CMathParser"]
+	path = CMathParser
+	url = https://github.com/NTDLS/CMathParser
